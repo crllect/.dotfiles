@@ -114,10 +114,18 @@ alias skhd-stop="skhd --stop-service"
 alias skhd-start="skhd --start-service"
 alias skhd-restart="skhd --restart-service"
 
+alias spacebar-start="brew services start spacebar"
+alias spacebar-stop="brew services stop spacebar"
+alias spacebar-restart="brew services restart spacebar"
+
+alias simple-bar-monitor="~/Scripts/MonitorWorkspaceChanges.sh"
+alias simple-bar-start="~/Scripts/simple-bar-start.sh"
+alias simple-bar-stop="~/Scripts/simple-bar-stop.sh"
+alias simple-bar-reload="~/Scripts/simple-bar-reload.sh"
+
 alias yabai-conf="subl ~/.yabairc"
 alias skhd-conf="subl ~/.skhdrc"
 alias zsh-conf="subl ~/.zshrc"
-alias simple-bar-rel="subl ~/Scripts/MonitorWorkspaceChanges.sh"
 
 alias all-restart="skhd --restart-service && yabai --restart-service"
 alias all-startup="skhd --start-service && yabai --start-service"

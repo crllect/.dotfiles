@@ -69,12 +69,12 @@ lctrl + alt + cmd + shift - p : yabai -m window --display recent; yabai -m displ
 # shift + ctrl - s : yabai -m window --move rel:0:20
 
 
-# Toggles external bar and adjusts menubar opacity
-lctrl + alt + cmd + shift - g : yabai -m config external_bar off:40:0 \; yabai -m config menubar_opacity 1.0 \; yabai -m config layout float
+# Toggles external bar and adjusts menubar opacity, then reloads simple-bar
+lctrl + lalt + cmd + shift - g : yabai -m config external_bar off:40:0 \; yabai -m config menubar_opacity 1.0 \; yabai -m config layout float; osascript ~/Scripts/simple-bar-reload.scpt; sleep 0.2; osascript ~/Scripts/simple-bar-reload.scpt
 
-# Restores external bar and adjusts menubar opacity
-lctrl + alt + cmd - g : yabai -m config external_bar on:0:0 \; yabai -m config menubar_opacity 0.0 \; yabai -m config layout bsp
 
+# Restores external bar and adjusts menubar opacity, then reloads simple-bar
+lctrl + alt + cmd - g : yabai -m config external_bar on:0:0 \; yabai -m config menubar_opacity 0.0 \; yabai -m config layout bsp; osascript ~/Scripts/simple-bar-reload.scpt; sleep 0.2; osascript ~/Scripts/simple-bar-reload.scpt
 
 # resize windows
 lctrl + alt + cmd + shift - h : yabai -m window --resize left:-50:0; \
